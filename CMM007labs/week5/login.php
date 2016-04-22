@@ -28,7 +28,7 @@ include("dbconnect.php");
 
     if (mysqli_num_rows($result) == 1)
     {
-    header("location: home.php");
+    header("location: home.php?name=<?php echo $username ?>");
     }else
     {
     echo "Incorrect username or password";
